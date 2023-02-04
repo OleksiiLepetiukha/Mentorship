@@ -1,11 +1,11 @@
 header {
-    background-image: url(Images/image/Header.jpg);
+    background-image: url(images/image/header.jpg);
     width: 1440px;
     height: 952px;
 }
 
 .promotion {
-    background-image: url(Images/image/Bottom.jpg);
+    background-image: url(images/image/bottom.jpg);
     width: 1180px;
     height: 500px;
 }
