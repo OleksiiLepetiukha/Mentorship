@@ -7,16 +7,17 @@ const babel = require('gulp-babel'),
     prefixer = require('gulp-autoprefixer'),
     rigger = require('gulp-rigger'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    image = require('gulp-image');
 
 const { watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
-function swallowError (error) {
-  // If you want details of the error in the console
-  console.log(error.toString());
+function swallowError(error) {
+    // If you want details of the error in the console
+    console.log(error.toString());
 
-  this.emit('end');
+    this.emit('end');
 }
 
 const folders = {
@@ -29,11 +30,18 @@ const path = {
         html: './',
         js: folders.dist + 'scripts/',
         css: folders.dist + 'styles/',
+        fonts: folders.dist + 'fonts/',
+        images: folders.dist + 'images/'
     },
     src: {
         html: folders.src + '*.html',
         js: folders.src + 'scripts/*.js',
-        css: folders.src + 'styles/*.scss'
+        css: folders.src + 'styles/*.scss',
+        fonts: [
+            folders.src + 'fonts/**/*.*',
+            'node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2'
+        ],
+        images: folders.src + 'images/**/*.*'
     },
     watch: {
         html: folders.src + '**/*.html',
@@ -49,6 +57,9 @@ function handleError(err) {
 }
 
 function _browserSync() {
+    stylesBuild();
+    htmlBuild();
+    scriptsBuild();
     browserSync.init({
         server: "./"
     });
@@ -66,7 +77,7 @@ function stylesBuild() {
         .on('error', handleError)
         .pipe(prefixer())
         .pipe(cleanCSS(
-            { level: { 1: {specialComments: 0} } }
+            { level: { 1: { specialComments: 0 } } }
         ))
         .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(path.build.css))
@@ -98,7 +109,26 @@ function scriptsBuild() {
         }))
 }
 
+function imagesBuild() {
+    gulp.src(path.src.images)
+        .pipe(image({
+            pngquant: true,
+            jpegRecompress: false,
+            mozjpeg: true,
+            svgo: true,
+            concurrent: 10
+        }))
+        .pipe(gulp.dest(path.build.images))
+}
+
+function fontsBuild() {
+    gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.build.fonts))
+}
+
 function build() {
+    imagesBuild();
+    fontsBuild();
     stylesBuild();
     scriptsBuild();
     htmlBuild();

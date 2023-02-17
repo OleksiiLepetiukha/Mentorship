@@ -1,14 +1,14 @@
-header {
-    background-image: url(scr/images/image/header.jpg);
-    width: 1440px;
-    height: 952px;
-}
-header h1 {
-    font-size: 25px;
-}
+@import 'common/variables.scss';
+@import 'common/fonts.scss';
+@import 'components/header.scss';
+@import 'common/default.scss';
+
+
+
+
 
 .promotion {
-    background-image: url(src/images/image/bottom.jpg);
+    background-image: url('../images/image/bottom.jpg');
     width: 1180px;
     height: 500px;
 }
