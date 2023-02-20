@@ -29,71 +29,78 @@
                 with us.</p>
         </div>
     </header>
-    <section class="search">
-        <span class="buttons">
-            <button>Flight</button>
-            <button>Hotel</button>
-        </span>
-        <div class="forms">
-            <form class="airports" action="#" method="post">
-                <label>Living From <input list="city_from"></label>
-                <datalist id="city_from">
-                    <option value="Dublin">
-                    <option value="London">
-                    <option value="Amsterdam">
-                    <option value="Berlin">
-                    <option value="Kharkiv">
-                </datalist>
-                <img src="src/images/logos/gray-plane.png" alt="logo">
-                <label>Going to<input list="city_to"></label>
-                <datalist id="city_to">
-                    <option value="Dublin">
-                    <option value="London">
-                    <option value="Amsterdam">
-                    <option value="Berlin">
-                    <option value="Kharkiv">
-                </datalist>
-            </form>
-            <form class="dates" action="#" method="post">
-                <label>Leave <img src="src/images/logos/leave-plane.png" alt="logo"><input type="date"></label>
-                <img src="src/images/logos/planner.png" alt="logo">
-                <label>Leave <img src="src/images/logos/return-plane.png" alt="logo"><input type="date"></label>
-            </form>
-            <input class="search_button" type="submit" value="">
-        </div>
-    </section>
     <main>
+        <section class="search">
+            <span class="buttons">
+                <button>Flight</button>
+                <button>Hotel</button>
+            </span>
+            <div class="forms">
+                <form class="airports" action="#" method="post">
+                    <label>Living From <input list="city_from"></label>
+                    <datalist id="city_from">
+                        <option value="Dublin">
+                        <option value="London">
+                        <option value="Amsterdam">
+                        <option value="Berlin">
+                        <option value="Kharkiv">
+                    </datalist>
+                    <div class="airports_image">
+                        <img src="src/images/logos/gray-plane.png" alt="logo">
+                    </div>
+                    <label>Going to<input list="city_to"></label>
+                    <datalist id="city_to">
+                        <option value="Dublin">
+                        <option value="London">
+                        <option value="Amsterdam">
+                        <option value="Berlin">
+                        <option value="Kharkiv">
+                    </datalist>
+                </form>
+                <form class="dates" action="#" method="post">
+                    <label>Leave<input type="date"></label>
+                    <div class="dates_image">
+                        <img src="src/images/logos/planner.png" alt="logo">
+                    </div>
+                    <label>Leave<input type="date"></label>
+                </form>
+                <button type="submit"></button>
+            </div>
+        </section>
         <section class="offers">
             <h3 class="offers_header">Special Upcoming Offers</h3>
             <div class="group_type">
-                <span>Team</span>
-                <span>Couple</span>
-                <span>Family</span>
+                <button>Team</button>
+                <button>Couple</button>
+                <button>Family</button>
             </div>
             <div class="special_offers">
                 <div class="offer_block">
                     <img src="src/images/image/loga-sea.png" alt="Loga sea">
                     <p class="date">14 FEB 2022</p>
-                    <p><span class="relax">Relax</span> 3 Days, 3 Nights</p>
-                    <h4>Loga Sea</h4>
-                    <p><b>700$</b>/Person</p>
-                    <button>Book Now</button>
+                    <div>
+                        <p class="duration"><span class="relax">Relax</span> 3 Days, 3 Nights</p>
+                        <h4>Loga Sea</h4>
+                        <p class="price"><span>700$</span>/Person<button>Book Now</button></p>
+                    </div>
                 </div>
                 <div class="offer_block">
                     <img src="src/images/image/ansgar-scheffold.png" alt="Ansgar Scheffold">
                     <p class="date">18 JUN 2022</p>
-                    <p><span class="adventure">Adventure</span> 4 Days, 3 Nights</p>
-                    <h4>Ansgar Scheffold</h4>
-                    <p><b>400$</b>/Person</p>
-                    <button>Book Now</button>
+                    <div>
+                        <p class="duration"><span class="adventure">Adventure</span> 4 Days, 3 Nights</p>
+                        <h4>Ansgar Scheffold</h4>
+                        <p class="price"><span>400$</span>/Person<button>Book Now</button></p>
+                    </div>
                 </div>
                 <div class="offer_block">
                     <img src="src/images/image/lona-x.png" alt="Lona X">
                     <p class="date">22 DEC 2022</p>
-                    <p><span class="relax">Relax</span> 7 Days,6 Nights</p>
-                    <h4>Lona X</h4>
-                    <p><b>340$</b>/Person</p>
-                    <button>Book Now</button>
+                    <div>
+                        <p class="duration"><span class="relax">Relax</span> 7 Days,6 Nights</p>
+                        <h4>Lona X</h4>
+                        <p class="price"><span>340$</span>/Person<button>Book Now</button></p>
+                    </div>
                 </div>
             </div>
         </section>
