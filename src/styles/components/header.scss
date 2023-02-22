@@ -1,6 +1,6 @@
 header {
-    background-image: url('../images/image/header.jpg');
-    width: 1440px;
+    background: url('../images/image/header.jpg') no-repeat;
+    background-size: contain;
     height: 952px;
 
     a {
@@ -10,12 +10,11 @@ header {
 
     .header_menu {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         h1 {
-            font-size: 48px;
+            font-size: em(48);
             color: $font-white;
         }
 
@@ -25,11 +24,32 @@ header {
 
             ul {
                 display: flex;
-                width: 400px;
                 list-style: none;
                 justify-content: space-between;
                 color: $font-white;
-                font-size: 24px;               
+                font-size: em(24);
+
+                a {
+                    display: block;
+                    padding: 15px 44px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                li {
+                    margin: 0 25px;
+
+                    &:hover {
+                        background: $font-white;
+                        border-radius: 10px;
+
+                        a {
+                            color: $primary-blue;
+                        }
+                    }
+                }
             }
         }
     }
@@ -40,19 +60,19 @@ header {
         flex-direction: column;
         
         h2 {
-            width: 850px;
+            padding: 0 180px;
             color: $font-white;
-            font-size: 64px;
+            font-size: em(64);
             text-align: center;
-            line-height: 96px;
+            line-height: 1.6;
         }
 
         p {
-            width: 700px;
-            font-size: 24px;
+            padding: 0 180px;
+            font-size: em(24);
             text-align: center;
             color: $font-white;
-            line-height: 48px;
+            line-height: 1.4;
         }
     }
 }

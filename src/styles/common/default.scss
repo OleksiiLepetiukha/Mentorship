@@ -1,10 +1,21 @@
 body {
     font-family: $poppins;
-    margin: 0px;
-    width: fit-content;
+    margin: 0;
+    width: 100%;
+    font-size: em(18);
 
     main {
         background-color: #f7f7f7;
         width: fit-content;
     }
+}
+
+.container--outer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container--inner {
+    width: calc(100% - 260px);
+    margin: 0 auto;
 }
