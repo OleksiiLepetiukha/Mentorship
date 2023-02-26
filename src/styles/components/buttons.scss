@@ -33,6 +33,14 @@
     font-size: 18px;
     line-height: 27px;
     cursor: pointer;
+
+    &:focus {
+        width: 100px;
+        height: 46px;
+        background: $primary-blue;
+        border-radius: 10px;
+        color: $font-white;
+    }
 }
 
 .price button {
@@ -48,4 +56,14 @@
     color: #3E86F5;
     border: none;
     cursor: pointer;
+}
+
+.about_us_info button {
+    width: 179px;
+    height: 75px;
+    border-radius: 10px;
+    background: $primary-blue;
+    font-size: 20px;
+    color: $font-white;
+    border: none;
 }
