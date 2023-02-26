@@ -17,53 +17,67 @@
     }
 }
 
-.forms button {
-    width: 154px;
-    height: 154px;
-    background: rgba(62, 134, 245, 0.8);
-    border-radius: 65px;
-    border: none;
-}
+.forms {
 
-.group_type button {
-    border: none;
-    background-color: $font-white;
-    color: $font-grey;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    cursor: pointer;
-
-    &:focus {
-        width: 100px;
-        height: 46px;
-        background: $primary-blue;
-        border-radius: 10px;
-        color: $font-white;
+    button {
+        width: 154px;
+        height: 154px;
+        background: rgba(62, 134, 245, 0.8);
+        border-radius: 65px;
+        border: none;
     }
 }
 
-.price button {
-    margin-left: 70px;
-    width: 107px;
-    height: 47px;
-    text-align: center;
-    background: #F2F6FF;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #3E86F5;
-    border: none;
-    cursor: pointer;
+.group_type {
+
+    button {
+        border: none;
+        width: 100px;
+        height: 46px;
+        background-color: $font-white;
+        color: $font-grey;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        cursor: pointer;
+
+        &:focus {
+            width: 100px;
+            height: 46px;
+            background: $primary-blue;
+            border-radius: 10px;
+            color: $font-white;
+        }
+    }
 }
 
-.about_us_info button {
-    width: 179px;
-    height: 75px;
-    border-radius: 10px;
-    background: $primary-blue;
-    font-size: 20px;
-    color: $font-white;
-    border: none;
+.price {
+
+    button {
+        margin-left: 70px;
+        width: 107px;
+        height: 47px;
+        text-align: center;
+        background: #F2F6FF;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #3E86F5;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.about_us_info {
+
+    button {
+        width: 179px;
+        height: 75px;
+        border-radius: 10px;
+        background: $primary-blue;
+        font-size: 20px;
+        color: $font-white;
+        border: none;
+    }
 }
