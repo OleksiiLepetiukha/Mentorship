@@ -25,6 +25,9 @@
         background: rgba(62, 134, 245, 0.8);
         border-radius: 65px;
         border: none;
+        cursor: pointer;
+        color: $font-white;
+        font-size: 70px;
     }
 }
 
@@ -79,5 +82,28 @@
         font-size: 20px;
         color: $font-white;
         border: none;
+        cursor: pointer;
+    }
+}
+
+.destination_buttons {
+
+    button {
+        width: 120px;
+        height: 46px;
+        border: none;
+        color: $font-grey;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        background: #f7f7f7;
+
+        &:focus {
+            width: 120px;
+            height: 46px;
+            background: $font-white;
+            border-radius: 10px;
+            color: $primary-blue;
+        }
     }
 }
