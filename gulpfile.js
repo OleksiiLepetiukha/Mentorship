@@ -45,8 +45,8 @@ const path = {
     },
     watch: {
         html: folders.src + '**/*.html',
-        js: folders.src + 'assets/**/*.js',
-        css: folders.src + 'assets/**/*.scss'
+        js: folders.src + 'scripts/**/*.js',
+        css: folders.src + 'styles/**/*.scss'
     },
     clean: [folders.dist + 'scripts', folders.dist + 'styles'],
     node: 'node_modules'
@@ -126,15 +126,17 @@ function fontsBuild() {
     .pipe(gulp.dest(path.build.fonts))
 }
 
-function build() {
+function build(cb) {
     imagesBuild();
     fontsBuild();
     stylesBuild();
     scriptsBuild();
     htmlBuild();
+    browserSync.reload();
+    cb();
 }
 
 exports.default = function () {
-    watch(path.watch.css, build());
+    watch(path.watch.css, build);
     _browserSync();
 }
