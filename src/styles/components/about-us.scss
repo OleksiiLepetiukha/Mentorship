@@ -1,4 +1,5 @@
 .about_us {
+    position: relative;
     padding-left: 60px;
     display: flex;
     align-items: center;
@@ -15,8 +16,8 @@
         position: absolute;
         width: 180px;
         height: 120px;
-        left: 518px;
-        top: 2270px;
+        left: 530px;
+        top: 136px;
         text-align: center;
         background: $font-white;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
@@ -39,8 +40,8 @@
 
     .turists {
         position: absolute;
-        left: 30px;
-        top: 2600px;
+        left: 36px;
+        top: 457px;
         text-align: center;
         width: 174px;
         height: 120px;
@@ -68,8 +69,8 @@
         width: 174px;
         height: 120px;
         text-align: center;
-        left: 515px;
-        top: 2780px;
+        left: 529px;
+        top: 617px;
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
         border-radius: 35px;
         background: $font-white;

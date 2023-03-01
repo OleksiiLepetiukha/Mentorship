@@ -1,0 +1,90 @@
+.reviews {
+    margin: 120px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .review_block {
+        position: relative;
+        width: 580px;
+        height: 410px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: $font-white;
+        border-radius: 50px;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+
+        .review {
+            margin: 0 47px 10px 25px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 42px;
+            color: $font-black;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 42px;
+            color: $primary-blue;
+        }
+
+        p:nth-child(3) {
+            margin: 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 42px;
+            color: $font-grey;
+        }
+
+        .review_img {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 134px;
+            left: 199px;
+            top: 331px;
+            background-color: $font-white;
+            border-radius: 50%;
+
+            img {
+                margin-top: 14px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .review_rating {
+                position: absolute;
+                top: 32px;
+                left: 108px;
+                width: 45px;
+                height: 20px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                color: $font-black;
+                border-radius: 25px;
+                background: $font-white;
+            }
+        }
+    }
+
+    & > * {
+
+        &:last-child {
+            margin: 90px;
+            width: 100px;
+            height: 20px;
+        }
+    }
+}

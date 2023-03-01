@@ -1,5 +1,5 @@
 node_modules
 *.map
 *-lock.json
-assets
+/assets
 **/Desktop - 1440.png

@@ -21,3 +21,8 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2') format('woff2');
+}

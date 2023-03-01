@@ -97,6 +97,7 @@
         font-size: 18px;
         line-height: 27px;
         background: #f7f7f7;
+        cursor: pointer;
 
         &:focus {
             width: 120px;
@@ -105,5 +106,18 @@
             border-radius: 10px;
             color: $primary-blue;
         }
+    }
+}
+
+.reviews {
+
+    button {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(62, 134, 245, .5);
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary-blue;
     }
 }
