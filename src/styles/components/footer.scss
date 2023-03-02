@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+
+    .annotation {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 42px;
+        color: $font-grey;
+    }
+
+    .navbar_bottom {
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+
+            a {
+                display: block;
+                padding: 15px 44px;
+                font-weight: 500;
+                font-size: 24px;
+                text-decoration: none;
+                color: rgba(0, 0, 0, .75);
+            }
+        }
+    }
+}
