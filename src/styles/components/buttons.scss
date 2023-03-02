@@ -115,9 +115,26 @@
         width: 40px;
         height: 40px;
         border: 2px solid rgba(62, 134, 245, .5);
+        background-color: #f7f7f7;
         border-radius: 15px;
         font-size: 20px;
         font-weight: 700;
         color: $primary-blue;
+        cursor: pointer;
+    }
+}
+
+.promotion {
+
+    button {
+        width: 220px;
+        height: 80px;
+        border: none;
+        border-radius: 25px;
+        background: $font-white;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary-blue;
+        cursor: pointer;
     }
 }
