@@ -13,7 +13,6 @@
 <body>
     <div class="container--outer">
         <header>
-            <div class="container--inner">
                 <section class="header_menu">
                     <h1><a href="#">Treloo</a></h1>
                     <nav class="navbar_top">
@@ -31,175 +30,182 @@
                         world
                         with us.</p>
                 </div>
-            </div>
         </header>
     </div>
-    <main>
-        <section class="search">
-            <span class="buttons">
-                <button>Flight</button>
-                <button>Hotel</button>
-            </span>
-            <div class="forms">
-                <form class="airports" action="#" method="post">
-                    <label>Living From <input list="city_from"></label>
-                    <datalist id="city_from">
-                        <option value="Dublin">
-                        <option value="London">
-                        <option value="Amsterdam">
-                        <option value="Berlin">
-                        <option value="Kharkiv">
-                    </datalist>
-                    <div class="airports_image">
+    <div class="container--outer">
+        <main>
+            <div class="container--inner">
+                <section class="search">
+                    <span class="buttons">
+                        <button>Flight</button>
+                        <button>Hotel</button>
+                    </span>
+                    <div class="forms">
+                        <form class="airports" action="#" method="post">
+                            <label>Living From <input list="city_from"></label>
+                            <datalist id="city_from">
+                                <option value="Dublin">
+                                <option value="London">
+                                <option value="Amsterdam">
+                                <option value="Berlin">
+                                <option value="Kharkiv">
+                            </datalist>
+                            <div class="airports_image">
+                            </div>
+                            <label>Going to<input list="city_to"></label>
+                            <datalist id="city_to">
+                                <option value="Dublin">
+                                <option value="London">
+                                <option value="Amsterdam">
+                                <option value="Berlin">
+                                <option value="Kharkiv">
+                            </datalist>
+                        </form>
+                        <form class="dates" action="#" method="post">
+                            <label>Leave<input type="date"></label>
+                            <div class="dates_image">
+                            </div>
+                            <label>Leave<input type="date"></label>
+                        </form>
+                        <button type="submit" class="fa-magnifying-glass"></button>
                     </div>
-                    <label>Going to<input list="city_to"></label>
-                    <datalist id="city_to">
-                        <option value="Dublin">
-                        <option value="London">
-                        <option value="Amsterdam">
-                        <option value="Berlin">
-                        <option value="Kharkiv">
-                    </datalist>
-                </form>
-                <form class="dates" action="#" method="post">
-                    <label>Leave<input type="date"></label>
-                    <div class="dates_image">
+                </section>
+                <section class="offers">
+                    <h3 class="offers_header">Special Upcoming Offers</h3>
+                    <div class="group_type">
+                        <button>Team</button>
+                        <button>Couple</button>
+                        <button>Family</button>
                     </div>
-                    <label>Leave<input type="date"></label>
-                </form>
-                <button type="submit" class="fa-magnifying-glass"></button>
-            </div>
-        </section>
-        <section class="offers">
-            <h3 class="offers_header">Special Upcoming Offers</h3>
-            <div class="group_type">
-                <button>Team</button>
-                <button>Couple</button>
-                <button>Family</button>
-            </div>
-            <div class="special_offers">
-                <div class="offer_block">
-                    <img src="src/images/image/loga-sea.png" alt="Loga sea">
-                    <p class="date">14 FEB 2022</p>
-                    <div>
-                        <p class="duration"><span class="relax">Relax</span> 3 Days, 3 Nights</p>
-                        <h4>Loga Sea</h4>
-                        <p class="price"><span>700$</span>/Person<button>Book Now</button></p>
+                    <div class="special_offers">
+                        <div class="offer_block">
+                            <img src="src/images/image/loga-sea.png" alt="Loga sea">
+                            <p class="date">14 FEB 2022</p>
+                            <div>
+                                <p class="duration"><span class="relax">Relax</span> 3 Days, 3 Nights</p>
+                                <h4>Loga Sea</h4>
+                                <p class="price"><span>700$</span>/Person<button>Book Now</button></p>
+                            </div>
+                        </div>
+                        <div class="offer_block">
+                            <img src="src/images/image/ansgar-scheffold.png" alt="Ansgar Scheffold">
+                            <p class="date">18 JUN 2022</p>
+                            <div>
+                                <p class="duration"><span class="adventure">Adventure</span> 4 Days, 3 Nights</p>
+                                <h4>Ansgar Scheffold</h4>
+                                <p class="price"><span>400$</span>/Person<button>Book Now</button></p>
+                            </div>
+                        </div>
+                        <div class="offer_block">
+                            <img src="src/images/image/lona-x.png" alt="Lona X">
+                            <p class="date">22 DEC 2022</p>
+                            <div>
+                                <p class="duration"><span class="relax">Relax</span> 7 Days,6 Nights</p>
+                                <h4>Lona X</h4>
+                                <p class="price"><span>340$</span>/Person<button>Book Now</button></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="offer_block">
-                    <img src="src/images/image/ansgar-scheffold.png" alt="Ansgar Scheffold">
-                    <p class="date">18 JUN 2022</p>
-                    <div>
-                        <p class="duration"><span class="adventure">Adventure</span> 4 Days, 3 Nights</p>
-                        <h4>Ansgar Scheffold</h4>
-                        <p class="price"><span>400$</span>/Person<button>Book Now</button></p>
+                </section>
+                <section class="about_us">
+                    <img class="about_us_img" src="src/images/image/travel-blog.jpg" alt="The man on mountain">
+                    <div class="destinations">
+                        <h5>300+</h5>
+                        <p>DESTINATIONS</p>
                     </div>
-                </div>
-                <div class="offer_block">
-                    <img src="src/images/image/lona-x.png" alt="Lona X">
-                    <p class="date">22 DEC 2022</p>
-                    <div>
-                        <p class="duration"><span class="relax">Relax</span> 7 Days,6 Nights</p>
-                        <h4>Lona X</h4>
-                        <p class="price"><span>340$</span>/Person<button>Book Now</button></p>
+                    <div class="turists">
+                        <h5>5000+</h5>
+                        <p>TURISTS</p>
                     </div>
-                </div>
+                    <div class="hotels">
+                        <h5>150+</h5>
+                        <p>HOTELS</p>
+                    </div>
+                    <div class="about_us_info">
+                        <h3 class="about_us_header"> Travel Any Corner of The World With Us</h3>
+                        <p class="about_us_text"> Would you explore nature paradise in the world, let’s find the best
+                            destination in world with us,
+                            Would you explore nature paradise in the world, let’s find the best destination in
+                            world with us. Would you explore nature paradise in the world, let’s find the best
+                            destination in
+                            world
+                            with us. <br>
+                            <br> Would you explore nature paradise in the world, let’s find the best destination in
+                            world with
+                            us.
+                        </p>
+                        <button>Contact Us</button>
+                    </div>
+                </section>
+                <section class="destination">
+                    <h3 class="destination_header">Recommended Destination</h3>
+                    <span class="destination_buttons">
+                        <button>Populor</button>
+                        <button>Adventure</button>
+                        <button>Beath</button>
+                    </span>
+                    <div class="destination_blocks">
+                        <div class="destination_block">
+                            <img src="src/images/image/kina-mountain.png" alt="picture">
+                            <span class="rating">3.4</span>
+                            <h5>Kina Mountain</h5>
+                            <a href="#">Cambodia</a>
+                        </div>
+                        <div class="destination_block">
+                            <img src="src/images/image/kina-mountain1.png" alt="picture">
+                            <span class="rating">4.5</span>
+                            <h5>Kina Mountain</h5>
+                            <a href="#">Cambodia</a>
+                        </div>
+                        <div class="destination_block">
+                            <img src="src/images/image/kina-mountain2.png" alt="picture">
+                            <span class="rating">4.2</span>
+                            <h5>Kina Mountain</h5>
+                            <a href="#">Cambodia</a>
+                        </div>
+                        <div class="destination_block">
+                            <img src="src/images/image/kina-mountain3.png" alt="picture">
+                            <span class="rating">3.5</span>
+                            <h5>Kina Mountain</h5>
+                            <a href="#">Cambodia</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="review_block">
+                        <p class="review">Our trip to Morocco was truly a onece in a lifetime experience and we are so
+                            grateful
+                            to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                        <a href="#">-Vand D</a>
+                        <p>Happy Treloo</p>
+                        <div class="review_img">
+                            <img src="src/images/image/girl.png" alt="A photo">
+                            <span class="review_rating">4.5</span>
+                        </div>
+                    </div>
+                    <div class="review_block">
+                        <p class="review">Our trip to Morocco was truly a onece in a lifetime experience and we are so
+                            grateful
+                            to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                        <a href="#">-Tru Vio</a>
+                        <p>Happy Treloo</p>
+                        <div class="review_img">
+                            <img src="src/images/image/boy.png" alt="A photo">
+                            <span class="review_rating">4.9</span>
+                        </div>
+                    </div>
+                    <span>
+                        <button>&#60;</button>
+                        <button>&#62;</button>
+                    </span>
+                </section>
+                <section class="promotion">
+                    <p>Don’t Miss The 50% Discount if You register Today</p>
+                    <button>Register Today</button>
+                </section>
             </div>
-        </section>
-        <section class="about_us">
-            <img class="about_us_img" src="src/images/image/travel-blog.jpg" alt="The man on mountain">
-            <div class="destinations">
-                <h5>300+</h5>
-                <p>DESTINATIONS</p>
-            </div>
-            <div class="turists">
-                <h5>5000+</h5>
-                <p>TURISTS</p>
-            </div>
-            <div class="hotels">
-                <h5>150+</h5>
-                <p>HOTELS</p>
-            </div>
-            <div class="about_us_info">
-                <h3 class="about_us_header"> Travel Any Corner of The World With Us</h3>
-                <p class="about_us_text"> Would you explore nature paradise in the world, let’s find the best
-                    destination in world with us,
-                    Would you explore nature paradise in the world, let’s find the best destination in
-                    world with us. Would you explore nature paradise in the world, let’s find the best destination in
-                    world
-                    with us. <br>
-                    <br> Would you explore nature paradise in the world, let’s find the best destination in world with
-                    us.
-                </p>
-                <button>Contact Us</button>
-            </div>
-        </section>
-        <section class="destination">
-            <h3 class="destination_header">Recommended Destination</h3>
-            <span class="destination_buttons">
-                <button>Populor</button>
-                <button>Adventure</button>
-                <button>Beath</button>
-            </span>
-            <div class="destination_blocks">
-                <div class="destination_block">
-                    <img src="src/images/image/kina-mountain.png" alt="picture">
-                    <span class="rating">3.4</span>
-                    <h5>Kina Mountain</h5>
-                    <a href="#">Cambodia</a>
-                </div>
-                <div class="destination_block">
-                    <img src="src/images/image/kina-mountain1.png" alt="picture">
-                    <span class="rating">4.5</span>
-                    <h5>Kina Mountain</h5>
-                    <a href="#">Cambodia</a>
-                </div>
-                <div class="destination_block">
-                    <img src="src/images/image/kina-mountain2.png" alt="picture">
-                    <span class="rating">4.2</span>
-                    <h5>Kina Mountain</h5>
-                    <a href="#">Cambodia</a>
-                </div>
-                <div class="destination_block">
-                    <img src="src/images/image/kina-mountain3.png" alt="picture">
-                    <span class="rating">3.5</span>
-                    <h5>Kina Mountain</h5>
-                    <a href="#">Cambodia</a>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="review_block">
-                <p class="review">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful
-                    to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <a href="#">-Vand D</a>
-                <p>Happy Treloo</p>
-                <div class="review_img">
-                    <img src="src/images/image/girl.png" alt="A photo">
-                    <span class="review_rating">4.5</span>
-                </div>
-            </div>
-            <div class="review_block">
-                <p class="review">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful
-                    to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
-                <a href="#">-Tru Vio</a>
-                <p>Happy Treloo</p>
-                <div class="review_img">
-                    <img src="src/images/image/boy.png" alt="A photo">
-                    <span class="review_rating">4.9</span>
-                </div>
-            </div>
-            <span>
-                <button>&#60;</button>
-                <button>&#62;</button>
-            </span>
-        </section>
-        <section class="promotion">
-            <p>Don’t Miss The 50% Discount if You register Today</p>
-            <button>Register Today</button>
-        </section>
-    </main>
+        </main>
+    </div>
     <footer class="footer">
         <p class="annotation">© 2022 Treloo LLC - All right reserved.</p>
         <nav class="navbar_bottom">

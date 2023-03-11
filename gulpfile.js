@@ -127,7 +127,7 @@ function fontsBuild() {
 }
 
 function build(cb) {
-    imagesBuild();
+    //imagesBuild();
     fontsBuild();
     stylesBuild();
     scriptsBuild();
