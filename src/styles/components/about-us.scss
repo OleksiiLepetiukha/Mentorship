@@ -1,0 +1,111 @@
+.about_us {
+    position: relative;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 960px;
+
+    .about_us_img {
+        width: 480px;
+        height: 800px;
+        border-radius: 75px;
+    }
+
+    .destinations {
+        position: absolute;
+        width: 180px;
+        height: 120px;
+        left: 530px;
+        top: 136px;
+        text-align: center;
+        background: $font-white;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 35px;
+
+        h5 {
+            margin: 37px 0 0 0;
+            font-weight: 600;
+            font-size: 36px;
+            color: $primary-blue;
+        }
+
+        p {
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 18px;
+            color: $font-black;
+        }
+    }
+
+    .turists {
+        position: absolute;
+        left: 36px;
+        top: 457px;
+        text-align: center;
+        width: 174px;
+        height: 120px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 35px;
+        background: $font-white;
+
+        h5 {
+            margin: 37px 0 0 0;
+            font-weight: 600;
+            font-size: 36px;
+            color: $primary-blue;
+        }
+
+        p {
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 18px;
+            color: $font-black;
+        }
+    }
+
+    .hotels {
+        position: absolute;
+        width: 174px;
+        height: 120px;
+        text-align: center;
+        left: 529px;
+        top: 617px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 35px;
+        background: $font-white;
+
+        h5 {
+            margin: 37px 0 0 0;
+            font-weight: 600;
+            font-size: 36px;
+            color: $primary-blue;
+        }
+
+        p {
+            margin: 0 auto;
+            font-weight: 300;
+            font-size: 18px;
+            color: $font-black;
+        }
+    }
+
+    .about_us_info {
+        width: 580px;
+        height: 597px;
+
+        .about_us_header {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            color: $font-black;
+        }
+
+        .about_us_text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 200%;
+            color: $font-grey;
+        }
+    }
+}

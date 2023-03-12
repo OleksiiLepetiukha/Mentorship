@@ -1,0 +1,76 @@
+header {
+    background: url('../images/image/header.jpg') no-repeat;
+    background-size: contain;
+    height: 952px;
+
+    a {
+        text-decoration: none;
+        color: $font-white;
+    }
+
+    .header_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: em(48);
+            color: $font-white;
+        }
+
+        .navbar_top {
+
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                color: $font-white;
+                font-size: em(24);
+
+                a {
+                    display: block;
+                    padding: 15px 44px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                li {
+                    margin: 0 25px;
+
+                    &:hover {
+                        background: $font-white;
+                        border-radius: 10px;
+                        
+                        a {
+                            color: $primary-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header_slogan {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        h2 {
+            padding: 0 180px;
+            color: $font-white;
+            font-size: 4.4vw;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        p {
+            padding: 0 180px;
+            font-size: em(24);
+            text-align: center;
+            color: $font-white;
+            line-height: 1.4;
+        }
+    }
+}

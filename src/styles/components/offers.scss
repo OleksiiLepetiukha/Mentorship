@@ -1,0 +1,110 @@
+.offers {
+    padding-top: 300px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .offers_header {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 72px;
+    }
+
+    .group_type {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 340px;
+        height: 66px;
+        background-color: $font-white;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+
+    .special_offers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1200px;
+        height: 450px;
+        margin-top: 40px;
+
+        .offer_block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-left: 8px;
+            width: 380px;
+            height: 457px;
+            background: $font-white;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 50px;
+
+            img {
+                width: 293px;
+                height: 273px;
+                border-radius: 50px;
+            }
+
+            .date {
+                writing-mode: vertical-lr;
+                color: $font-grey;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 0px;
+                letter-spacing: 0.5em;
+            }
+
+            .duration {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 500;
+                color: $font-grey;
+                width: 300px;
+
+                .relax {
+                    margin-right: 10px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 69px;
+                    height: 21px;
+                    background: #FCDDEC;
+                    border-radius: 100px;
+                    color: #F178B6;
+                }
+
+                .adventure {
+                    margin-right: 10px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 104px;
+                    height: 21px;
+                    background: #F1F1FD;
+                    border-radius: 100px;
+                    color: #7879F1;
+                }
+            }
+
+            h4 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 0px;
+                color: $font-black;
+            }
+
+            .price {
+                font-size: 16px;
+                font-weight: 500;
+                color: $font-grey;
+
+                span {
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: $font-black;
+                }
+            }
+        }
+    }
+}
