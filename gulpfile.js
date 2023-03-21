@@ -35,7 +35,7 @@ const path = {
     },
     src: {
         html: folders.src + '*.html',
-        js: folders.src + 'scripts/*.js',
+        js: folders.src + 'scripts/**/*.js',
         css: folders.src + 'styles/*.scss',
         fonts: [
             folders.src + 'fonts/**/*.*',
@@ -58,8 +58,8 @@ function handleError(err) {
 
 function _browserSync() {
     stylesBuild();
-    htmlBuild();
     scriptsBuild();
+    htmlBuild();
     browserSync.init({
         server: "./"
     });
@@ -100,7 +100,6 @@ function scriptsBuild() {
         .pipe(babel())
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(uglify())
         .on('error', handleError)
         .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(path.build.js))
@@ -127,7 +126,7 @@ function fontsBuild() {
 }
 
 function build(cb) {
-    imagesBuild();
+    // imagesBuild();
     fontsBuild();
     stylesBuild();
     scriptsBuild();
@@ -138,5 +137,7 @@ function build(cb) {
 
 exports.default = function () {
     watch(path.watch.css, build);
+    watch(path.watch.js, build);
+    watch(path.watch.html, build);
     _browserSync();
 }
