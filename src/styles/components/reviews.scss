@@ -16,6 +16,15 @@
         background-color: $font-white;
         border-radius: 50px;
 
+        &::before {
+            content: '\f10d';
+            font-family: 'Font Awesome';
+            position: absolute;
+            top: 20px;
+            font-size: 120px;
+            color:rgba(0,0,0,.2);
+        }
+
         &:first-child {
             margin-right: 20px;
         }
@@ -75,11 +84,17 @@
                 color: $font-black;
                 border-radius: 25px;
                 background: $font-white;
+
+                &::before {
+                    content: '\f005';
+                    font-family: 'Font Awesome';
+                    color: #f8ce01;
+                }
             }
         }
     }
 
-    & > * {
+    &>* {
 
         &:last-child {
             margin: 90px;

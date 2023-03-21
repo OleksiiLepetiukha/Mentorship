@@ -1,5 +1,7 @@
 .buttons {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     top: 803px;
     left: 130px;
@@ -12,8 +14,32 @@
         width: 121px;
         height: 66px;
         background-color: $font-white;
+        font-size: 18px;
+        font-weight: 500;
+        color: $font-black;
         border: none;
         cursor: pointer;
+
+        &:first-child::before {
+            content: '\f5b0';
+            margin-right: 10px;
+            font-family: 'Font Awesome';
+            font-size: 18px;
+            color: $primary-blue;
+        }
+
+        &:last-child::before {
+            content: '\f594';
+            margin-right: 10px;
+            font-family: 'Font Awesome';
+            font-size: 18px;
+            color: $primary-blue;
+        }
+
+        &:focus {
+            background: rgba(62, 134, 245, 0.2);
+            border-radius: 25px;
+        }
     }
 }
 
@@ -28,6 +54,13 @@
         cursor: pointer;
         color: $font-white;
         font-size: 70px;
+
+        &::before {
+            content: '\f002';
+            font-family: 'Font Awesome';
+            font-size: 60px;
+            color: $font-white;
+        }
     }
 }
 

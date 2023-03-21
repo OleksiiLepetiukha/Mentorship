@@ -42,6 +42,13 @@
                 font-size: 12px;
                 line-height: 18px;
                 color: $font-black;
+
+                &::before {
+                    content: '\f005';
+                    font-family: 'Font Awesome';
+                    color: #f8ce01;
+                    font-size: 12px;
+                }
             }
 
             h5 {

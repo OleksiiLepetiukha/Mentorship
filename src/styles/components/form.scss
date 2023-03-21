@@ -39,9 +39,11 @@
             border: 1px dashed $font-grey;
             border-radius: 50%;
 
-            img {
-                width: 27px;
-                height: 24px;
+            &::before {
+                content: '\f072';
+                font-family: 'Font Awesome';
+                font-size: 18px;
+                color: $font-grey;
             }
         }
     }
@@ -62,7 +64,25 @@
             font-weight: 500;
             line-height: 45px;
             color: $font-grey;
+
+            p {
+                margin: 0;
+
+                .fa-plane {
+                    margin-left: 10px;
+                    font-family: 'Font Awesome';
+                    font-size: 18px;
+                    color: $primary-blue;
+                }
+            }
+
+            &:last-child {
+                .fa-plane {
+                    transform: rotateY(180deg);
+                }
+            }
         }
+
         .dates_image {
             display: flex;
             justify-content: center;
@@ -72,9 +92,11 @@
             border: 1px dashed $font-grey;
             border-radius: 50%;
 
-            img {
-                width: 25px;
-                height: 25px;
+            &::before {
+                content: '\f073';
+                font-family: 'Font Awesome';
+                font-size: 18px;
+                color: $font-grey;
             }
         }
     }
