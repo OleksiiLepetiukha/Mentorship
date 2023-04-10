@@ -3,12 +3,13 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    top: 803px;
-    left: 130px;
-    width: 279px;
+    top: -100px;
+    left: 9%;
+    width: 19%;
     height: 100px;
     border-radius: 25px 25px 0 0;
     background-color: $font-white;
+    z-index: 2;
 
     button {
         width: 121px;
@@ -46,8 +47,8 @@
 .forms {
 
     button {
-        width: 154px;
-        height: 154px;
+        width: 13%;
+        height: 56%;
         background: rgba(62, 134, 245, 0.8);
         border-radius: 65px;
         border: none;

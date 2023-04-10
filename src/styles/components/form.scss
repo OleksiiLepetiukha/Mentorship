@@ -1,102 +1,105 @@
-.forms {
-    position: absolute;
-    top: 903px;
-    left: 130px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 1180px;
-    height: 275px;
-    border-radius: 0 50px 50px 50px;
-    background-color: $font-white;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+.search {
+    position: relative;
 
-    .airports {
+    .forms {
+        position: absolute;
+        left: 9%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: 382px;
-        height: 154px;
-        border: 2px solid rgba(172, 172, 172, 0.5);
-        border-radius: 25px;
+        width: 81%;
+        height: 275px;
+        border-radius: 0 50px 50px 50px;
+        background-color: $font-white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 
-        label {
+        .airports {
             display: flex;
-            flex-direction: column;
-            width: 130px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 45px;
-            color: $font-grey;
-        }
-
-        .airports_image {
-            display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            width: 40px;
-            height: 40px;
-            border: 1px dashed $font-grey;
-            border-radius: 50%;
+            width: 32%;
+            height: 56%;
+            border: 2px solid rgba(172, 172, 172, 0.5);
+            border-radius: 25px;
 
-            &::before {
-                content: '\f072';
-                font-family: 'Font Awesome';
+            label {
+                display: flex;
+                flex-direction: column;
+                width: 34%;
                 font-size: 18px;
+                font-weight: 500;
+                line-height: em(45);
                 color: $font-grey;
             }
-        }
-    }
 
-    .dates {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 477px;
-        height: 154px;
-        border: 2px solid rgba(172, 172, 172, 0.5);
-        border-radius: 25px;
+            .airports_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 10%;
+                height: 25%;
+                border: 1px dashed $font-grey;
+                border-radius: 50%;
 
-        label {
-            display: flex;
-            flex-direction: column;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 45px;
-            color: $font-grey;
-
-            p {
-                margin: 0;
-
-                .fa-plane {
-                    margin-left: 10px;
+                &::before {
+                    content: '\f072';
                     font-family: 'Font Awesome';
                     font-size: 18px;
-                    color: $primary-blue;
-                }
-            }
-
-            &:last-child {
-                .fa-plane {
-                    transform: rotateY(180deg);
+                    color: $font-grey;
                 }
             }
         }
 
-        .dates_image {
+        .dates {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            width: 40px;
-            height: 40px;
-            border: 1px dashed $font-grey;
-            border-radius: 50%;
+            width: 38%;
+            height: 56%;
+            border: 2px solid rgba(172, 172, 172, 0.5);
+            border-radius: 25px;
 
-            &::before {
-                content: '\f073';
-                font-family: 'Font Awesome';
+            label {
+                display: flex;
+                flex-direction: column;
                 font-size: 18px;
+                font-weight: 500;
+                line-height: em(45);
                 color: $font-grey;
+
+                p {
+                    margin: 0;
+
+                    .fa-plane {
+                        margin-left: 10px;
+                        font-family: 'Font Awesome';
+                        font-size: 18px;
+                        color: $primary-blue;
+                    }
+                }
+
+                &:last-child {
+                    .fa-plane {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+
+            .dates_image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 8%;
+                height: 25%;
+                border: 1px dashed $font-grey;
+                border-radius: 50%;
+
+                &::before {
+                    content: '\f073';
+                    font-family: 'Font Awesome';
+                    font-size: 18px;
+                    color: $font-grey;
+                }
             }
         }
     }
